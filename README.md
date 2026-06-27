@@ -64,6 +64,19 @@ To run this project locally on your machine:
   - `components/` - Reusable UI elements (`Navbar`, `Footer`, `BackgroundElements`).
 - `public/` - Static assets, `.pdf` resumes, images, `robots.txt`, and favicons.
 
-## 📄 License
+## 🧠 Lessons Learned
 
+While building this portfolio, I overcame several interesting technical hurdles:
+- **Responsive Flexbox Wrapping**: Diagnosed and resolved a subtle mobile layout bug where flexbox wrapping caused text overflow rather than wrapping gracefully. Used precise Tailwind alignment (`text-center px-4`) to ensure text stays centered regardless of viewport width.
+- **SEO & Metadata**: Mastered Next.js App Router metadata configuration by injecting dynamic OpenGraph tags, `robots.txt`, and a `sitemap.xml`, resulting in immediate Google indexing capability.
+- **Component Modularity**: Refactored massive UI blocks into cleaner semantic sections (using detailed commenting) to massively improve code readability for future maintenance.
+
+## 🤝 Connect with Me
+
+I am currently open for opportunities! If you like what you see, let's get in touch:
+- **LinkedIn**: [Nisarg Jayesh Delvadiya](https://www.linkedin.com/in/nisarg-delvadiya/)
+- **GitHub**: [@NisargDelvadiya](https://github.com/NisargDelvadiya)
+- **Email**: [nisarg.delvadiya1@gmail.com](mailto:nisarg.delvadiya1@gmail.com)
+
+## 📄 License
 This project is open-source. Feel free to use it for inspiration!

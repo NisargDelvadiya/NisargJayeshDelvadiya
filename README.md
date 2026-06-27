@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nisarg Jayesh Delvadiya | Developer Portfolio 🚀
 
-## Getting Started
+Welcome to my personal developer portfolio! This project is a highly responsive, modern, and SEO-optimized web application built to showcase my projects, technical skills, and educational background. 
 
-First, run the development server:
+Live Demo: [https://www.nisargjayeshdelvadiya.in](https://www.nisargjayeshdelvadiya.in)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Modern UI/UX**: Built with a sleek dark mode design, utilizing dynamic micro-animations, glassmorphism, and smooth scroll behaviors.
+- **Fully Responsive**: Meticulously crafted to look flawless on any device, from massive desktop monitors down to mobile screens (including complex text wrapping and stacked layouts).
+- **SEO Optimized**: Fully equipped with OpenGraph tags, semantic HTML, keywords, dynamic `sitemap.xml`, and a `robots.txt`—ensuring total visibility and successful indexing by Google Search Console.
+- **Global Reach**: Integrated with Google Translate to allow users from around the world to read my portfolio in their native language natively from the UI.
+- **Interactive Contact Form**: A custom-built form allowing recruiters or peers to easily reach out to me via email.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Library**: [React 18](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) for rapid, beautiful utility-class styling.
+- **Deployment**: Configured for static hosting (e.g. BigRock, Vercel, Netlify).
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+To run this project locally on your machine:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/NisargDelvadiya/NisargJayeshDelvadiya.git
+   cd NisargJayeshDelvadiya
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Open in browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the live reloading server.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Repository Structure
+
+- `app/` - Core Next.js routing and UI components.
+  - `page.js` - The massive single-page application orchestrating the entire portfolio layout.
+  - `layout.js` - Global HTML wrapper containing critical SEO metadata and Google Bot rules.
+  - `components/` - Reusable UI elements (`Navbar`, `Footer`, `BackgroundElements`).
+- `public/` - Static assets, `.pdf` resumes, images, `robots.txt`, and favicons.
+
+## 📄 License
+
+This project is open-source. Feel free to use it for inspiration!

@@ -1,5 +1,12 @@
 # Nisarg Jayesh Delvadiya | Developer Portfolio 🚀
 
+<div align="center">
+  <a href="https://github.com/NisargDelvadiya/NisargJayeshDelvadiya/stargazers"><img src="https://img.shields.io/github/stars/NisargDelvadiya/NisargJayeshDelvadiya?style=for-the-badge&logo=github&color=yellow" alt="Stars Badge"/></a>
+  <a href="https://github.com/NisargDelvadiya/NisargJayeshDelvadiya/network/members"><img src="https://img.shields.io/github/forks/NisargDelvadiya/NisargJayeshDelvadiya?style=for-the-badge&logo=github&color=blue" alt="Forks Badge"/></a>
+  <a href="https://github.com/NisargDelvadiya/NisargJayeshDelvadiya/issues"><img src="https://img.shields.io/github/issues/NisargDelvadiya/NisargJayeshDelvadiya?style=for-the-badge&logo=github&color=red" alt="Issues Badge"/></a>
+</div>
+<br/>
+
 Welcome to my personal developer portfolio! This project is a highly responsive, modern, and SEO-optimized web application built to showcase my projects, technical skills, and educational background. 
 
 Live Demo: [https://www.nisargjayeshdelvadiya.in](https://www.nisargjayeshdelvadiya.in)

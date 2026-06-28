@@ -6,7 +6,7 @@ import BackgroundElements from "@/app/components/BackgroundElements";
 export const metadata = {
   metadataBase: new URL('https://www.nisargjayeshdelvadiya.in'),
   title: "Nisarg Jayesh Delvadiya | Web Developer Portfolio",
-  description: "A platform to support your favourite developer - Yea It's Me, by the way Coconut Water will also be fine! Explore my projects, skills, and education.",
+  description: "Explore my web development projects, skills, and educational background.",
   keywords: ["Nisarg Jayesh Delvadiya", "Web Developer", "Frontend Developer", "Next.js", "React Developer", "Portfolio", "Software Engineer"],
   authors: [{ name: "Nisarg Jayesh Delvadiya" }],
   creator: "Nisarg Jayesh Delvadiya",

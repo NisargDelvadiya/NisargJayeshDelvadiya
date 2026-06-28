@@ -20,26 +20,30 @@ const MyTodo = () => {
 
 
   useEffect(() => {
-    const starRefs = [situationRef, taskRef, actionRef, resultRef, lighthouseRef];
-    starRefs.forEach((ref) => {
-      const el = ref.current;
-      if (el) {
-        gsap.fromTo(el,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            ease: 'power2.out',
-            scrollTrigger: {
-              trigger: el,
-              start: 'top 92%',
-              end: 'top 55%',
-              scrub: 1
+    let ctx = gsap.context(() => {
+      const starRefs = [situationRef, taskRef, actionRef, resultRef, lighthouseRef];
+      starRefs.forEach((ref) => {
+        const el = ref.current;
+        if (el) {
+          gsap.fromTo(el,
+            { opacity: 0, y: 50 },
+            {
+              opacity: 1,
+              y: 0,
+              ease: 'power2.out',
+              scrollTrigger: {
+                trigger: el,
+                start: 'top 92%',
+                end: 'top 55%',
+                scrub: 1
+              }
             }
-          }
-        );
-      }
+          );
+        }
+      });
     });
+
+    return () => ctx.revert();
   }, []);
   return (
     <div className="flex flex-col items-center min-h-screen text-white p-4">

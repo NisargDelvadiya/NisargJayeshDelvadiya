@@ -56,7 +56,7 @@ const Navbar = () => {
       </a>
 
       {/* Desktop Menu - From Uiverse.io by SelfMadeSystem */}
-      <div className="hidden md:flex items-center justify-end flex-grow">
+      <div className="hidden md:flex items-center justify-end grow">
         <div className="nav">
           <div className="container">
             {navLinks.map((link) => (

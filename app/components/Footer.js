@@ -56,7 +56,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#1a1a1a] text-white">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
         <div className="flex flex-row justify-center gap-16 sm:gap-32 text-left">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-heading uppercase">Legal</h2>

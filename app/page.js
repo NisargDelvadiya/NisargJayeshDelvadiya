@@ -609,7 +609,7 @@ export default function Home() {
         </div>
         <section className="w-full flex flex-col justify-center items-center py-12 px-6 md:px-12 gap-8 md:gap-16 box-border">
           <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-center gap-12">
-            <div ref={profileImageRef} className="flex items-center justify-center flex-shrink-0">
+            <div ref={profileImageRef} className="flex items-center justify-center shrink-0">
               <img
                 className="object-cover rounded-full border border-zinc-800 shadow-xl w-56 h-56 md:w-[300px] md:h-[300px]"
                 alt="hero"
@@ -618,11 +618,11 @@ export default function Home() {
                 height="300"
               />
             </div>
-            <div ref={profileTextRef} className="flex flex-col justify-center items-center text-center flex-grow w-full max-w-2xl gap-y-6 min-w-0">
-              <div className="petit-formal-script-regular text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide break-words w-full">
+            <div ref={profileTextRef} className="flex flex-col justify-center items-center text-center grow w-full max-w-2xl gap-y-6 min-w-0">
+              <div className="petit-formal-script-regular text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide wrap-break-word w-full">
                 Hello, I'm Nisarg Jayesh Delvadiya
               </div>
-              <div className="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed font-normal break-words w-full">
+              <div className="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed font-normal wrap-break-word w-full">
                 A passionate and dedicated web developer with a strong focus on creating innovative and user-friendly web applications. I have a keen interest in next.js development especially frontend side, and I enjoy bringing ideas to life through clean and efficient code. My goal is to continuously learn and grow as a developer, while contributing to projects that make a positive impact on users' experiences.
               </div>
               {/* 
@@ -650,16 +650,16 @@ export default function Home() {
         </div>
         <section className="w-full flex flex-col justify-center items-center py-12 px-6 md:px-12 gap-8 md:gap-16 box-border">
           <div className="w-full max-w-6xl flex flex-col-reverse md:flex-row justify-between items-center gap-12">
-            <div ref={educationTextRef} className="flex flex-col justify-center items-center text-center flex-grow w-full max-w-2xl min-w-0">
-              <div className="petit-formal-script-regular text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 tracking-wide leading-tight break-words w-full">
+            <div ref={educationTextRef} className="flex flex-col justify-center items-center text-center grow w-full max-w-2xl min-w-0">
+              <div className="petit-formal-script-regular text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 tracking-wide leading-tight wrap-break-word w-full">
                 Manipal University Jaipur
               </div>
-              <div className="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed font-normal break-words w-full">
+              <div className="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed font-normal wrap-break-word w-full">
                 Bachelors in Information Technology, 2024-2028.
               </div>
             </div>
 
-            <div ref={educationImageRef} className="flex items-center justify-center flex-shrink-0">
+            <div ref={educationImageRef} className="flex items-center justify-center shrink-0">
               <img
                 className="object-cover rounded-full border border-zinc-800 shadow-xl w-56 h-56 md:w-[300px] md:h-[300px]"
                 alt="hero"
@@ -717,7 +717,7 @@ export default function Home() {
         <section>
           <div className="w-full max-w-6xl overflow-hidden relative mask-edges py-8 select-none">
             <div className="flex w-max animate-marquee whitespace-nowrap hover:[animation-play-state:paused]">
-              <div className="flex gap-16 items-center flex-shrink-0 text-[#9f9fa9] pr-16">
+              <div className="flex gap-16 items-center shrink-0 text-[#9f9fa9] pr-16">
                 <svg viewBox="0 0 128 128">
                   <path fill="#9f9fa9" d="M0 51.098V76.86h4.422V56.604L20.73 76.87h27.694v-4.113H30.553v-6.801h14.37v-4.113h-14.37v-6.621h17.87v-4.116H26.13v4.116h.002V76.68L5.527 51.098H0zm85.09.01v4.115h9.03v21.65h4.42v-21.65h8.847v-4.116H85.09zm-31.322.011 20.73 25.764h5.803L69.936 64.01l10.35-12.871-5.79.01-7.459 9.261-7.48-9.29h-5.79zm70.158 14.598c-.761 0-1.445.128-2.051.394-.602.263-1.078.633-1.426 1.108-.35.476-.525 1.032-.525 1.664 0 .77.258 1.384.78 1.847.517.464 1.227.809 2.124 1.036l1.24.312a7.02 7.02 0 0 1 1.026.334 1.91 1.91 0 0 1 .683.461 1.034 1.034 0 0 1 .248.697 1.25 1.25 0 0 1-.283.803 1.77 1.77 0 0 1-.76.535 3.11 3.11 0 0 1-1.132.192 3.24 3.24 0 0 1-1.116-.182 1.902 1.902 0 0 1-.804-.557 1.63 1.63 0 0 1-.352-.931h-1.941c.027.71.216 1.316.566 1.812s.836.873 1.46 1.13c.62.26 1.357.39 2.202.39.875 0 1.619-.136 2.233-.4.617-.27 1.088-.643 1.414-1.118.327-.479.488-1.028.488-1.658 0-.466-.09-.872-.266-1.217a2.726 2.726 0 0 0-.72-.887 4.227 4.227 0 0 0-1.028-.607 7.09 7.09 0 0 0-1.19-.385l-1.02-.25a6.975 6.975 0 0 1-.667-.195 2.82 2.82 0 0 1-.597-.285 1.304 1.304 0 0 1-.43-.418 1.037 1.037 0 0 1-.158-.58 1.21 1.21 0 0 1 .238-.717c.156-.21.385-.376.678-.5a2.771 2.771 0 0 1 1.056-.184c.585 0 1.062.126 1.43.383a1.424 1.424 0 0 1 .623 1.07h1.9a2.775 2.775 0 0 0-.513-1.607c-.333-.466-.792-.833-1.377-1.096-.584-.265-1.26-.394-2.033-.394zm-7.998.144v7.55c-.003.377-.062.697-.176.954a1.25 1.25 0 0 1-.506.584c-.218.133-.488.2-.803.2-.29 0-.546-.057-.771-.17a1.247 1.247 0 0 1-.522-.481 1.474 1.474 0 0 1-.195-.75h-1.963c0 .661.147 1.213.447 1.656a2.768 2.768 0 0 0 1.211 1.002 4.22 4.22 0 0 0 1.72.34c.697 0 1.311-.134 1.835-.4a2.97 2.97 0 0 0 1.236-1.149c.293-.499.444-1.093.448-1.787v-7.549h-1.961zm-53.332.059-8.844 10.982h5.805l5.937-7.38-2.898-3.602zm45.785 8.498c-.324 0-.6.112-.83.336a1.07 1.07 0 0 0-.344.807 1.082 1.082 0 0 0 .344.818c.23.225.506.336.83.336a1.105 1.105 0 0 0 .574-.156c.177-.101.318-.24.428-.416a1.115 1.115 0 0 0 .166-.582 1.097 1.097 0 0 0-.354-.807 1.133 1.133 0 0 0-.814-.336z"></path>
                 </svg>
@@ -770,7 +770,7 @@ export default function Home() {
                   <path fill="#9f9fa9" d="M53.595 67.817c-13.224 3.694 8.044 11.325 24.88 4.112-2.757-1.071-4.735-2.309-4.735-2.309-7.508 1.419-10.99 1.531-17.805.753-5.625-.644-2.34-2.556-2.34-2.556zm22.864-7.207c-9.95 1.915-15.698 1.854-22.979 1.103-5.629-.582-1.944-3.311-1.944-3.311-14.563 4.834 8.106 10.318 28.459 4.365-2.162-.761-3.536-2.157-3.536-2.157zm7.799-41.731s-29.439 7.351-15.38 23.552c4.151 4.778-1.088 9.074-1.088 9.074s10.533-5.437 5.696-12.248c-4.518-6.349-7.982-9.502 10.772-20.378zM37.48 81.305c34.324 5.563 62.567-2.506 53.666-6.523 0 0 2.431 2.005-2.679 3.555-9.715 2.943-40.444 3.831-48.979.117-3.066-1.335 2.687-3.187 4.496-3.576 1.887-.409 2.965-.334 2.965-.334-3.412-2.404-22.055 4.718-9.469 6.761zm41.868-27.42c1.65-1.126 3.93-2.104 3.93-2.104s-6.492 1.161-12.961 1.704c-7.918.664-16.412.795-20.676.225-10.095-1.35 5.534-5.063 5.534-5.063s-6.07-.411-13.533 3.199c-8.827 4.269 21.832 6.214 37.706 2.039zm3.865 10.432c-.074.2-.322.425-.322.425 21.546-5.664 13.624-19.965 3.322-16.345-.903.319-1.378 1.063-1.378 1.063s.571-.23 1.845-.496c5.207-1.084 12.669 6.972-3.467 15.353zM65.006 48.492c-3.179-7.186-13.957-13.471.005-24.498 17.41-13.742 8.476-22.682 8.476-22.682 3.604 14.197-12.711 18.486-18.6 27.328-4.01 6.024 1.969 12.499 10.119 19.852zm18.79 35.651c-13.219 2.488-29.524 2.199-39.191.603 0 0 1.98 1.64 12.157 2.294 15.484.99 39.269-.551 39.832-7.878 0-.001-1.082 2.776-12.798 4.981zM51.131 99.535c-2.887 0-5.351.714-7.408 1.622l.624 2.493c1.619-.595 3.618-1.147 5.674-1.147 2.85 0 3.979 1.147 3.979 3.521V108h-1.2c-6.921 0-10.044 2.585-10.044 6.624 0 3.479 2.059 5.407 5.933 5.407 2.49 0 4.351-.845 6.088-2.35l.316 2.319H58v-14.492c0-3.599-1.924-5.973-6.869-5.973zM54 115.037c-1 1.266-2.893 1.978-4.279 1.978-1.973 0-2.988-1.371-2.988-3.27 0-2.056 1.202-3.745 5.794-3.745H54v5.037zm15.611.644l-.835-3.608L65.02 100h-4.39l6.051 20h5.026c2.884-7 4.943-14 6.086-20h-4.271c-.671 5-2.016 10.424-3.911 15.681zm18.404-16.146c-2.889 0-5.411.714-7.467 1.622l.596 2.493c1.621-.595 3.722-1.147 5.778-1.147 2.846 0 4.078 1.147 4.078 3.521V108h-1.428c-6.923 0-10.045 2.585-10.045 6.624 0 3.479 2.056 5.407 5.93 5.407 2.492 0 4.349-.845 6.091-2.35l.318 2.319H95v-14.492c0-3.599-2.044-5.973-6.985-5.973zm-1.411 17.462c-1.975 0-3.046-1.363-3.046-3.261 0-2.055 1.149-3.736 5.736-3.736H91v5h-.067c-1.465 1-2.947 1.997-4.329 1.997zM36 115.373c0 3.271-.445 4.638-.979 5.701-.615 1.193-2.053 2.475-3.601 3.269l1.934 2.345c2.032-.749 3.943-2.078 5.092-3.757 1.15-1.723 1.554-3.491 1.554-7.867V93h-4v22.373z"></path>
                 </svg>
               </div>
-              <div className="flex gap-16 items-center flex-shrink-0 text-[#9f9fa9] pr-16" aria-hidden="true">
+              <div className="flex gap-16 items-center shrink-0 text-[#9f9fa9] pr-16" aria-hidden="true">
                 <svg viewBox="0 0 128 128">
                   <path fill="#9f9fa9" d="M0 51.098V76.86h4.422V56.604L20.73 76.87h27.694v-4.113H30.553v-6.801h14.37v-4.113h-14.37v-6.621h17.87v-4.116H26.13v4.116h.002V76.68L5.527 51.098H0zm85.09.01v4.115h9.03v21.65h4.42v-21.65h8.847v-4.116H85.09zm-31.322.011 20.73 25.764h5.803L69.936 64.01l10.35-12.871-5.79.01-7.459 9.261-7.48-9.29h-5.79zm70.158 14.598c-.761 0-1.445.128-2.051.394-.602.263-1.078.633-1.426 1.108-.35.476-.525 1.032-.525 1.664 0 .77.258 1.384.78 1.847.517.464 1.227.809 2.124 1.036l1.24.312a7.02 7.02 0 0 1 1.026.334 1.91 1.91 0 0 1 .683.461 1.034 1.034 0 0 1 .248.697 1.25 1.25 0 0 1-.283.803 1.77 1.77 0 0 1-.76.535 3.11 3.11 0 0 1-1.132.192 3.24 3.24 0 0 1-1.116-.182 1.902 1.902 0 0 1-.804-.557 1.63 1.63 0 0 1-.352-.931h-1.941c.027.71.216 1.316.566 1.812s.836.873 1.46 1.13c.62.26 1.357.39 2.202.39.875 0 1.619-.136 2.233-.4.617-.27 1.088-.643 1.414-1.118.327-.479.488-1.028.488-1.658 0-.466-.09-.872-.266-1.217a2.726 2.726 0 0 0-.72-.887 4.227 4.227 0 0 0-1.028-.607 7.09 7.09 0 0 0-1.19-.385l-1.02-.25a6.975 6.975 0 0 1-.667-.195 2.82 2.82 0 0 1-.597-.285 1.304 1.304 0 0 1-.43-.418 1.037 1.037 0 0 1-.158-.58 1.21 1.21 0 0 1 .238-.717c.156-.21.385-.376.678-.5a2.771 2.771 0 0 1 1.056-.184c.585 0 1.062.126 1.43.383a1.424 1.424 0 0 1 .623 1.07h1.9a2.775 2.775 0 0 0-.513-1.607c-.333-.466-.792-.833-1.377-1.096-.584-.265-1.26-.394-2.033-.394zm-7.998.144v7.55c-.003.377-.062.697-.176.954a1.25 1.25 0 0 1-.506.584c-.218.133-.488.2-.803.2-.29 0-.546-.057-.771-.17a1.247 1.247 0 0 1-.522-.481 1.474 1.474 0 0 1-.195-.75h-1.963c0 .661.147 1.213.447 1.656a2.768 2.768 0 0 0 1.211 1.002 4.22 4.22 0 0 0 1.72.34c.697 0 1.311-.134 1.835-.4a2.97 2.97 0 0 0 1.236-1.149c.293-.499.444-1.093.448-1.787v-7.549h-1.961zm-53.332.059-8.844 10.982h5.805l5.937-7.38-2.898-3.602zm45.785 8.498c-.324 0-.6.112-.83.336a1.07 1.07 0 0 0-.344.807 1.082 1.082 0 0 0 .344.818c.23.225.506.336.83.336a1.105 1.105 0 0 0 .574-.156c.177-.101.318-.24.428-.416a1.115 1.115 0 0 0 .166-.582 1.097 1.097 0 0 0-.354-.807 1.133 1.133 0 0 0-.814-.336z"></path>
                 </svg>
@@ -841,7 +841,7 @@ export default function Home() {
             <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-center text-white">Have Something For Me?</h2>
             <p className="mb-12 font-light text-center text-zinc-400 sm:text-xl max-w-2xl mx-auto">Feel free to reach out if you have any questions, feedback, or opportunities!</p>
 
-            <div className="mx-auto max-w-screen-md">
+            <div className="mx-auto max-w-3xl">
               <form onSubmit={handleFormSubmit} autoComplete="off" className="space-y-8">
                 <div>
                   <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>

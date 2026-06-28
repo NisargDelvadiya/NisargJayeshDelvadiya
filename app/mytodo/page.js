@@ -59,6 +59,9 @@ const MyTodo = () => {
           <source src="/Assets/MyTodo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <div className="w-full max-w-[800px] mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-xl text-yellow-200/80 text-sm font-medium leading-relaxed shadow-lg">
+          <span className="font-bold text-yellow-400">Disclaimer:</span> The video demo and Lighthouse reports shown here may slightly differ from the live application. The project is subject to continuous UI/UX enhancements. Additionally, Lighthouse performance metrics can fluctuate based on server load, network conditions, active hosting constraints, and ongoing package updates.
+        </div>
       </div>
 
       {/* Project Action Buttons */}

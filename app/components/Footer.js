@@ -69,7 +69,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h2 className="mb-6 text-sm font-semibold text-heading uppercase">Donation</h2>
               <ul className="text-body font-medium">
                 <li className="mb-4">
@@ -79,7 +79,7 @@ const Footer = () => {
                   <a href="https://hindu.fund" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555]">Hindu Fund</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
         </div>
         <hr className="my-6 border-default sm:mx-auto lg:my-8" />
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 flex-wrap pb-4">

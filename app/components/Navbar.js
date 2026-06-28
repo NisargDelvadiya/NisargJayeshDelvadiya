@@ -17,12 +17,19 @@ const Navbar = () => {
     if (pathname === '/') {
       e.preventDefault();
       
-      const element = document.getElementById(targetId);
-      if (element) {
-        element.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+      if (targetId === 'top') {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
         });
+      } else {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       }
     }
   };

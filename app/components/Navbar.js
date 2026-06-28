@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <nav className="text-white flex items-center justify-between px-8 h-20 sticky top-0 z-50 bg-[#1a1a1a]">
 
-      <a href="https://www.nisargjayeshdelvadiya.in" className="logo flex relative items-center">
+      <a href="https://www.nisargjayeshdelvadiya.com" className="logo flex relative items-center">
         <div className="logo2">
           <img src="/Assets/Logo2.png" alt="logo" width="40" />
         </div>

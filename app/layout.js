@@ -4,7 +4,7 @@ import Footer from "@/app/components/Footer";
 import BackgroundElements from "@/app/components/BackgroundElements";
 
 export const metadata = {
-  metadataBase: new URL('https://www.nisargjayeshdelvadiya.in'),
+  metadataBase: new URL('https://www.nisargjayeshdelvadiya.com'),
   title: "Nisarg Jayesh Delvadiya | Web Developer Portfolio",
   description: "Explore my web development projects, skills, and educational background.",
   keywords: ["Nisarg Jayesh Delvadiya", "Web Developer", "Frontend Developer", "Next.js", "React Developer", "Portfolio", "Software Engineer"],
@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: "Nisarg Jayesh Delvadiya | Web Developer Portfolio",
     description: "Explore my web development projects, skills, and educational background.",
-    url: "https://www.nisargjayeshdelvadiya.in",
+    url: "https://www.nisargjayeshdelvadiya.com",
     siteName: "Nisarg Jayesh Delvadiya",
     locale: "en_IN",
     type: "website",

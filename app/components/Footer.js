@@ -84,7 +84,7 @@ const Footer = () => {
         <hr className="my-6 border-default sm:mx-auto lg:my-8" />
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 flex-wrap pb-4">
           <div className="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto text-center sm:text-left">
-            <span className="text-sm text-body text-[#555]">&copy; 2026 <a href="https://www.nisargjayeshdelvadiya.in" className="hover:underline">NisargJayeshDelvadiya &trade;</a> • Made with ❤️ in Bharat 🇮🇳 | All Rights are Reserved
+            <span className="text-sm text-body text-[#555]">&copy; 2026 <a href="https://www.nisargjayeshdelvadiya.com" className="hover:underline">NisargJayeshDelvadiya &trade;</a> • Made with ❤️ in Bharat 🇮🇳 | All Rights are Reserved
             </span>
           </div>
 

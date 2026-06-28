@@ -9,7 +9,7 @@
 
 Welcome to my personal developer portfolio! This project is a highly responsive, modern, and SEO-optimized web application built to showcase my projects, technical skills, and educational background. 
 
-Live Demo: [https://www.nisargjayeshdelvadiya.in](https://www.nisargjayeshdelvadiya.in)
+Live Demo: [https://www.nisargjayeshdelvadiya.com](https://www.nisargjayeshdelvadiya.com)
 
 ## 🌟 Project Breakdown (S.T.A.R. Method)
 

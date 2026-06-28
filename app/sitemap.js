@@ -3,25 +3,25 @@ export const dynamic = 'force-static';
 export default function sitemap() {
   return [
     {
-      url: 'https://www.nisargjayeshdelvadiya.in',
+      url: 'https://www.nisargjayeshdelvadiya.com',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://www.nisargjayeshdelvadiya.in/mytodo',
+      url: 'https://www.nisargjayeshdelvadiya.com/mytodo',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://www.nisargjayeshdelvadiya.in/privacy',
+      url: 'https://www.nisargjayeshdelvadiya.com/privacy',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
-      url: 'https://www.nisargjayeshdelvadiya.in/t&c',
+      url: 'https://www.nisargjayeshdelvadiya.com/t&c',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,

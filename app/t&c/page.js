@@ -19,7 +19,7 @@ export default function TermsAndConditionsPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-white">1. Acceptance of Terms</h2>
           <p className="leading-relaxed">
-            These Terms &amp; Conditions govern your use of the website <strong>NisargJayeshDelvadiya</strong> (accessible via <a href="https://www.nisargjayeshdelvadiya.in" className="text-blue-400 hover:underline">www.nisargjayeshdelvadiya.in</a>). By accessing or using this website, you agree to be bound by these terms, which constitute a legally binding agreement between you and Nisarg Jayesh Delvadiya. 
+            These Terms &amp; Conditions govern your use of the website <strong>NisargJayeshDelvadiya</strong> (accessible via <a href="https://www.nisargjayeshdelvadiya.com" className="text-blue-400 hover:underline">www.nisargjayeshdelvadiya.com</a>). By accessing or using this website, you agree to be bound by these terms, which constitute a legally binding agreement between you and Nisarg Jayesh Delvadiya. 
           </p>
           <p className="leading-relaxed">
             These terms are published in accordance with the provisions of <strong>Rule 3 (1) of the Information Technology (Intermediaries Guidelines and Digital Media Ethics Code) Rules, 2021</strong>, requiring the publishing of rules, regulations, privacy policy, and terms of use for access or usage of this website.

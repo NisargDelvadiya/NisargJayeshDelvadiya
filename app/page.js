@@ -870,7 +870,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                  <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your message</label>
                   <textarea
                     id="message"
                     rows="6"

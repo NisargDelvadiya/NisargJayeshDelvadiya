@@ -59,9 +59,6 @@ const MyTodo = () => {
           <source src="/Assets/MyTodo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="w-full max-w-[800px] mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-xl text-yellow-200/80 text-sm font-medium leading-relaxed shadow-lg">
-          <span className="font-bold text-yellow-400">Disclaimer:</span> The video demo and Lighthouse reports shown here may slightly differ from the live application. The project is subject to continuous UI/UX enhancements. Additionally, Lighthouse performance metrics can fluctuate based on server load, network conditions, active hosting constraints, and ongoing package updates.
-        </div>
       </div>
 
       {/* Project Action Buttons */}
@@ -310,6 +307,14 @@ const MyTodo = () => {
               </tbody>
             </table>
           </div>
+        </div>
+      </section>
+
+      {/* Disclaimer Section */}
+      <section className="w-full flex flex-col justify-center items-center py-6 px-12 box-border mb-12">
+        <div className="w-full max-w-4xl bg-[#13151a]/40 border border-zinc-800/80 rounded-2xl p-6 shadow-2xl backdrop-blur-md text-zinc-400 text-sm leading-relaxed text-center">
+          <span className="text-zinc-300 font-bold block mb-2">Disclaimer</span>
+          The video demo and Lighthouse reports shown above may slightly differ from the live application. The project is subject to continuous UI/UX enhancements. Additionally, Lighthouse performance metrics can fluctuate based on server load, network conditions, active hosting constraints, and ongoing package updates.
         </div>
       </section>
     </div>

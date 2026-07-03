@@ -569,7 +569,7 @@ export default function Home() {
       <div className="flex justify-center items-center gap-2 font-bold text-4xl md:text-5xl mb-16 md:mb-8 md:mt-1 text-center px-4 developer-font">Welcome to my Portfolio Website :)
       </div>
 
-      <div className="w-full max-w-xl bg-[#1e1e1e] rounded-lg border border-zinc-800 shadow-2xl p-4 sm:p-6 developer-font relative mb-32 md:mb-64">
+      <div className="w-full max-w-xl bg-[#1e1e1e] rounded-lg border border-zinc-800 shadow-2xl p-4 sm:p-6 developer-font relative mb-32 md:mb-64 overflow-hidden">
         <div className="flex gap-1.5 absolute top-3 left-4">
           <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
           <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
@@ -586,7 +586,7 @@ export default function Home() {
             <span className="animate-cursor border-r-2 border-r-white ml-0.5">&nbsp;</span>
           </div>
 
-          <div className="h-10 mt-2">
+          <div className="min-h-[2.5rem] mt-2">
             {isErrorCycle && visibleChars === maxLength && (
               <div className="text-xs bg-red-950/30 border border-red-900/50 text-red-400 p-2 rounded flex items-center gap-2 animate-pulse">
                 <span>❌</span>

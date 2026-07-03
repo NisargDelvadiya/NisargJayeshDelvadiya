@@ -580,7 +580,7 @@ export default function Home() {
           floatMath.js
         </div>
 
-        <div className="min-h-[200px] sm:min-h-[250px] flex flex-col justify-between w-full">
+        <div className="min-h-[350px] sm:min-h-[250px] flex flex-col justify-between w-full">
           <div className="text-left text-xs sm:text-sm md:text-lg leading-relaxed whitespace-pre pl-2 overflow-x-auto max-w-full pb-2">
             {renderTypedText()}
             <span className="animate-cursor border-r-2 border-r-white ml-0.5">&nbsp;</span>

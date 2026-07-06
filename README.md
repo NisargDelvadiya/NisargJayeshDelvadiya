@@ -79,4 +79,4 @@ I am currently open for opportunities! If you like what you see, let's get in to
 - **GitHub**: [@NisargDelvadiya](https://github.com/NisargDelvadiya)
 - **LinkedIn**: [Nisarg Jayesh Delvadiya](https://www.linkedin.com/in/nisarg-delvadiya/)
 
-
+## Open Contribution is not allowed for this Project.

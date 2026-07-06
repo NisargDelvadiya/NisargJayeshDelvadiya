@@ -2,6 +2,140 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 
+const ALL_LANGUAGES = [
+  { code: "en", name: "English" },
+  { code: "af", name: "Afrikaans" },
+  { code: "sq", name: "Albanian" },
+  { code: "am", name: "Amharic" },
+  { code: "ar", name: "Arabic" },
+  { code: "hy", name: "Armenian" },
+  { code: "as", name: "Assamese" },
+  { code: "ay", name: "Aymara" },
+  { code: "az", name: "Azerbaijani" },
+  { code: "bm", name: "Bambara" },
+  { code: "eu", name: "Basque" },
+  { code: "be", name: "Belarusian" },
+  { code: "bn", name: "Bengali" },
+  { code: "bho", name: "Bhojpuri" },
+  { code: "bs", name: "Bosnian" },
+  { code: "bg", name: "Bulgarian" },
+  { code: "ca", name: "Catalan" },
+  { code: "ceb", name: "Cebuano" },
+  { code: "ny", name: "Chichewa" },
+  { code: "zh-CN", name: "Chinese (Simplified)" },
+  { code: "zh-TW", name: "Chinese (Traditional)" },
+  { code: "co", name: "Corsican" },
+  { code: "hr", name: "Croatian" },
+  { code: "cs", name: "Czech" },
+  { code: "da", name: "Danish" },
+  { code: "dv", name: "Divehi" },
+  { code: "nl", name: "Dutch" },
+  { code: "eo", name: "Esperanto" },
+  { code: "et", name: "Estonian" },
+  { code: "ee", name: "Ewe" },
+  { code: "tl", name: "Filipino" },
+  { code: "fi", name: "Finnish" },
+  { code: "fr", name: "French" },
+  { code: "fy", name: "Frisian" },
+  { code: "gl", name: "Galician" },
+  { code: "lg", name: "Ganda" },
+  { code: "ka", name: "Georgian" },
+  { code: "de", name: "German" },
+  { code: "el", name: "Greek" },
+  { code: "gn", name: "Guarani" },
+  { code: "gu", name: "Gujarati" },
+  { code: "ht", name: "Haitian Creole" },
+  { code: "ha", name: "Hausa" },
+  { code: "haw", name: "Hawaiian" },
+  { code: "iw", name: "Hebrew" },
+  { code: "hi", name: "Hindi" },
+  { code: "hmn", name: "Hmong" },
+  { code: "hu", name: "Hungarian" },
+  { code: "is", name: "Icelandic" },
+  { code: "ig", name: "Igbo" },
+  { code: "ilo", name: "Iloko" },
+  { code: "id", name: "Indonesian" },
+  { code: "ga", name: "Irish" },
+  { code: "it", name: "Italian" },
+  { code: "ja", name: "Japanese" },
+  { code: "jw", name: "Javanese" },
+  { code: "kn", name: "Kannada" },
+  { code: "kk", name: "Kazakh" },
+  { code: "km", name: "Khmer" },
+  { code: "rw", name: "Kinyarwanda" },
+  { code: "ko", name: "Korean" },
+  { code: "kri", name: "Krio" },
+  { code: "ku", name: "Kurdish (Kurmanji)" },
+  { code: "ckb", name: "Kurdish (Sorani)" },
+  { code: "ky", name: "Kyrgyz" },
+  { code: "lo", name: "Lao" },
+  { code: "la", name: "Latin" },
+  { code: "lv", name: "Latvian" },
+  { code: "ln", name: "Lingala" },
+  { code: "lt", name: "Lithuanian" },
+  { code: "lb", name: "Luxembourgish" },
+  { code: "mk", name: "Macedonian" },
+  { code: "mai", name: "Maithili" },
+  { code: "mg", name: "Malagasy" },
+  { code: "ms", name: "Malay" },
+  { code: "ml", name: "Malayalam" },
+  { code: "mt", name: "Maltese" },
+  { code: "mi", name: "Maori" },
+  { code: "mr", name: "Marathi" },
+  { code: "mni-Mtei", name: "Meiteilon (Manipuri)" },
+  { code: "lus", name: "Mizo" },
+  { code: "mn", name: "Mongolian" },
+  { code: "my", name: "Myanmar (Burmese)" },
+  { code: "ne", name: "Nepali" },
+  { code: "no", name: "Norwegian" },
+  { code: "or", name: "Odia (Oriya)" },
+  { code: "om", name: "Oromo" },
+  { code: "ps", name: "Pashto" },
+  { code: "fa", name: "Persian" },
+  { code: "pl", name: "Polish" },
+  { code: "pt", name: "Portuguese" },
+  { code: "pa", name: "Punjabi" },
+  { code: "qu", name: "Quechua" },
+  { code: "ro", name: "Romanian" },
+  { code: "ru", name: "Russian" },
+  { code: "sm", name: "Samoan" },
+  { code: "sa", name: "Sanskrit" },
+  { code: "gd", name: "Scots Gaelic" },
+  { code: "nso", name: "Sepedi" },
+  { code: "sr", name: "Serbian" },
+  { code: "st", name: "Sesotho" },
+  { code: "sn", name: "Shona" },
+  { code: "sd", name: "Sindhi" },
+  { code: "si", name: "Sinhala" },
+  { code: "sk", name: "Slovak" },
+  { code: "sl", name: "Slovenian" },
+  { code: "so", name: "Somali" },
+  { code: "es", name: "Spanish" },
+  { code: "su", name: "Sundanese" },
+  { code: "sw", name: "Swahili" },
+  { code: "sv", name: "Swedish" },
+  { code: "tg", name: "Tajik" },
+  { code: "ta", name: "Tamil" },
+  { code: "tt", name: "Tatar" },
+  { code: "te", name: "Telugu" },
+  { code: "th", name: "Thai" },
+  { code: "ti", name: "Tigrinya" },
+  { code: "ts", name: "Tsonga" },
+  { code: "tr", name: "Turkish" },
+  { code: "tk", name: "Turkmen" },
+  { code: "ak", name: "Twi" },
+  { code: "uk", name: "Ukrainian" },
+  { code: "ur", name: "Urdu" },
+  { code: "ug", name: "Uyghur" },
+  { code: "uz", name: "Uzbek" },
+  { code: "vi", name: "Vietnamese" },
+  { code: "cy", name: "Welsh" },
+  { code: "xh", name: "Xhosa" },
+  { code: "yi", name: "Yiddish" },
+  { code: "yo", name: "Yoruba" },
+  { code: "zu", name: "Zulu" },
+]
+
 /**
  * Footer Component
  * Contains legal links, donation links, and handles Google Translate integration.
@@ -35,7 +169,6 @@ const Footer = () => {
       window.googleTranslateElementInit = () => {
         new window.google.translate.TranslateElement({
           pageLanguage: 'en',
-          includedLanguages: 'as,bn,brx,doi,gu,hi,kn,ks,gom,mai,ml,mni,mr,ne,or,pa,sa,sat,sd,ta,te,ur,en',
           layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
           autoDisplay: false
         }, 'google_translate_element');
@@ -96,28 +229,9 @@ const Footer = () => {
                 value={currentLanguage}
                 className="bg-[#2a2a2a] text-[#ccc] border border-[#444] rounded-md px-3 py-1.5 text-xs focus:outline-none focus:border-blue-500 hover:text-white transition duration-200 cursor-pointer"
               >
-                <option value="en">English</option>
-                <option value="as">অসমীয়া (Assamese)</option>
-                <option value="bn">বাংলা (Bengali)</option>
-                <option value="brx">बोडो (Bodo)</option>
-                <option value="doi">डोगरी (Dogri)</option>
-                <option value="gu">ગુજરાતી (Gujarati)</option>
-                <option value="hi">हिन्दी (Hindi)</option>
-                <option value="kn">ಕನ್ನಡ (Kannada)</option>
-                <option value="ks">कॉशुर / كأشُر (Kashmiri)</option>
-                <option value="gom">कोंकणी (Konkani)</option>
-                <option value="mai">मैथिली (Maithili)</option>
-                <option value="ml">മലയാളം (Malayalam)</option>
-                <option value="mni">মণিপুরী / মৈতৈলোন (Manipuri)</option>
-                <option value="mr">मराठी (Marathi)</option>
-                <option value="ne">नेपाली (Nepali)</option>
-                <option value="or">ଓଡ଼ିଆ (Odia)</option>
-                <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
-                <option value="sa">संस्कृतम् (Sanskrit)</option>
-                <option value="sat">संताली (Santali)</option>
-                <option value="sd">सिन्धी / سنڌي (Sindhi)</option>
-                <option value="ta">தமிழ் (Tamil)</option>
-                <option value="te">తెలుగు (Telugu)</option>
+                {ALL_LANGUAGES.map((lang) => (
+                  <option key={lang.code} value={lang.code}>{lang.name}</option>
+                ))}
               </select>
             </div>
             

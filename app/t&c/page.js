@@ -89,8 +89,21 @@ export default function TermsAndConditionsPage() {
           </p>
           <div className="space-y-1 text-sm">
             <p><strong className="text-white">Name:</strong> Nisarg Jayesh Delvadiya</p>
-            <p><strong className="text-white">Email:</strong> <a href="mailto:nisarg.delvadiya1@zohomail.in" className="text-blue-400 hover:underline">nisarg.delvadiya1@zohomail.in</a></p>
+            <p><strong className="text-white">Email:</strong> <a href="mailto:nisarg.delvadiya1@zohomail.in" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">nisarg.delvadiya1@zohomail.in</a></p>
             <p><strong className="text-white">Location:</strong> Jaipur, Rajasthan, India</p>
+          </div>
+        </section>
+
+        {/* Grievance Officer */}
+        <section className="space-y-4 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl">
+          <h2 className="text-2xl font-bold text-white mb-2">8. Grievance Redressal</h2>
+          <div className="leading-relaxed text-sm space-y-1">
+            <p className="mb-4">In accordance with the Information Technology Act, the contact details of the Grievance Officer are provided below:</p>
+            <p><strong className="text-white">Name:</strong> Nisarg Jayesh Delvadiya</p>
+            <p><strong className="text-white">Designation:</strong> Grievance Redressal Officer</p>
+            <p><strong className="text-white">Email:</strong> <a href="mailto:care@naksh.com" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">care@naksh.com</a></p>
+            <p><strong className="text-white">Phone:</strong> <a href="tel:+917984406844" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">+91 7984406844</a></p>
+            <p><strong className="text-white">Working Hours:</strong> Mon-Fri, 9 AM - 5 PM (IST)</p>
           </div>
         </section>
 

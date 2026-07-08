@@ -44,9 +44,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="text-white flex items-center justify-between px-8 h-20 sticky top-0 z-50 bg-[#1a1a1a]">
+    <nav aria-label="Main Navigation" className="text-white flex items-center justify-between px-8 h-20 sticky top-0 z-50 bg-[#1a1a1a]">
 
-      <a href="https://www.nisargjayeshdelvadiya.com" className="logo flex relative items-center">
+      <a aria-label="Home Page" href="https://www.nisargjayeshdelvadiya.com" className="logo flex relative items-center focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
         <div className="logo2">
           <img src="/Assets/Logo2.png" alt="logo" width="40" />
         </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.path} 
                 onClick={(e) => handleNavClick(e, link.id)} 
-                className="btn text-center text-zinc-400 hover:text-white transition cursor-pointer flex items-center justify-center"
+                className="btn text-center text-zinc-400 hover:text-white transition cursor-pointer flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 {link.name}
               </Link>
@@ -76,8 +76,11 @@ const Navbar = () => {
       {/* Mobile Hamburger Toggle */}
       <div className="md:hidden flex items-center">
         <button 
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-menu"
+          aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-          className="text-white hover:text-zinc-300 transition focus:outline-none p-2"
+          className="text-white hover:text-zinc-300 transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded p-2"
         >
           <img 
             src={isMobileMenuOpen ? "/Assets/close.svg" : "/Assets/menu.svg"} 
@@ -89,13 +92,13 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-[#1a1a1a] flex flex-col items-center py-6 shadow-2xl md:hidden border-t border-zinc-800 gap-6">
+        <div id="mobile-menu" className="absolute top-20 left-0 w-full bg-[#1a1a1a] flex flex-col items-center py-6 shadow-2xl md:hidden border-t border-zinc-800 gap-6">
           {navLinks.map((link) => (
             <Link 
               key={link.name}
               href={link.path} 
               onClick={(e) => handleNavClick(e, link.id)} 
-              className="text-lg font-medium text-zinc-400 hover:text-white transition cursor-pointer"
+              className="text-lg font-medium text-zinc-400 hover:text-white transition cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-4 py-2"
             >
               {link.name}
             </Link>

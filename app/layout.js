@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
 
         <Navbar />
         
-        <main className="min-h-[80.8vh] relative z-10">
+        <main id="main-content" className="min-h-[80.8vh] relative z-10">
           {children}
         </main>
 

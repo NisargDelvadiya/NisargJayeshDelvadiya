@@ -107,6 +107,15 @@ export default function TermsAndConditionsPage() {
           </div>
         </section>
 
+        {/* Accessibility Compliance */}
+        <section className="space-y-4 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl">
+          <h2 className="text-2xl font-bold text-white mb-2">9. Accessibility Compliance</h2>
+          <div className="leading-relaxed text-sm space-y-1">
+            <p className="mb-4">We are committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone, and applying the relevant accessibility standards.</p>
+            <p>Our website is fully compliant with the <strong>Web Content Accessibility Guidelines (WCAG)</strong>, which defines requirements for designers and developers to improve accessibility for people with disabilities.</p>
+          </div>
+        </section>
+
       </div>
     </main>
   );

@@ -90,7 +90,7 @@ export default function TermsAndConditionsPage() {
           <div className="space-y-1 text-sm">
             <p><strong className="text-white">Name:</strong> Nisarg Jayesh Delvadiya</p>
             <p><strong className="text-white">Email:</strong> <a href="mailto:nisarg.delvadiya1@zohomail.in" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">nisarg.delvadiya1@zohomail.in</a></p>
-            <p><strong className="text-white">Location:</strong> Jaipur, Rajasthan, India</p>
+            <p><strong className="text-white">Location:</strong> Vadodara, Gujarat, Bharat</p>
           </div>
         </section>
 

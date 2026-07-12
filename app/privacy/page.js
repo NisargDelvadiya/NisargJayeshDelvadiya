@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-white">1. Introduction</h2>
           <p className="leading-relaxed">
-            Welcome to <strong>NisargJayeshDelvadiya</strong> (accessible via <a href="https://www.nisargjayeshdelvadiya.com" className="text-blue-400 hover:underline">www.nisargjayeshdelvadiya.com</a>). We respect your privacy and are committed to protecting your personal data. 
+            Welcome to <strong>NisargJayeshDelvadiya</strong> (accessible via <a href="https://www.nisargjayeshdelvadiya.com" title="Go to https://www.nisargjayeshdelvadiya.com" className="text-blue-400 hover:underline cursor-pointer">www.nisargjayeshdelvadiya.com</a>). We respect your privacy and are committed to protecting your personal data. 
           </p>
           <p className="leading-relaxed">
             This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website, in compliance with the <strong>Information Technology Act, 2000</strong>, the <strong>Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (SPDI Rules)</strong>, and the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong> of India.
@@ -94,7 +94,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <div className="space-y-1 text-sm">
             <p><strong className="text-white">Name:</strong> Nisarg Jayesh Delvadiya</p>
-            <p><strong className="text-white">Email:</strong> <a href="mailto:nisarg.delvadiya1@zohomail.in" className="text-blue-400 hover:underline">nisarg.delvadiya1@zohomail.in</a></p>
+            <p><strong className="text-white">Email:</strong> <a href="mailto:nisarg.delvadiya1@zohomail.in" title="Go to mailto:nisarg.delvadiya1@zohomail.in" className="text-blue-400 hover:underline cursor-pointer">nisarg.delvadiya1@zohomail.in</a></p>
             <p><strong className="text-white">Address:</strong> Vadodara, Gujarat, Bharat</p>
           </div>
         </section>

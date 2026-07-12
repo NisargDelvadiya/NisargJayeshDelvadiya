@@ -631,7 +631,7 @@ export default function Home() {
                 and name it exactly "Nisarg_Jayesh_Delvadiya_Resume.pdf". 
               */}
               <a
-                href="/Assets/Nisarg_Jayesh_Delvadiya_Resume.pdf"
+                href="/Assets/Nisarg_Jayesh_Delvadiya_Resume.pdf" title="Go to /Assets/Nisarg_Jayesh_Delvadiya_Resume.pdf"
                 download="Nisarg_Jayesh_Delvadiya_Resume.pdf"
                 className="cursor-pointer inline-block rounded-xl bg-blue-600 px-8 py-3 text-sm font-semibold text-center leading-6 text-white transition-colors duration-200 hover:bg-blue-700 focus-visible:bg-blue-700"
               >
@@ -885,7 +885,7 @@ export default function Home() {
                   <button
                     type="submit"
                     disabled={submitStatus === 'loading'}
-                    className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 sm:w-fit"
+                    className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 sm:w-fit cursor-pointer"
                   >
                     {submitStatus === 'loading' ? 'Sending...' : 'Send message'}
                   </button>
@@ -908,8 +908,8 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center sm:items-end gap-8 sm:gap-16 min-h-[160px]">
                 {/* From Uiverse.io by Gaurang7717 */}
                 <div className="light-button arratai scale-105 sm:scale-100">
-                  <a href="https://aratt.ai/user/@nisargjayeshdelvadiya" target="_blank" rel="noopener noreferrer">
-                    <button className="bt">
+                  <a href="https://aratt.ai/user/@nisargjayeshdelvadiya" title="Go to https://aratt.ai/user/@nisargjayeshdelvadiya" target="_blank" rel="noopener noreferrer">
+                    <button className="bt cursor-pointer">
                       <div className="light-holder">
                         <div className="dot"></div>
                         <div className="light"></div>
@@ -925,8 +925,8 @@ export default function Home() {
                 </div>
                 {/* From Uiverse.io by Gaurang7717 */}
                 <div className="light-button github scale-105 sm:scale-100">
-                  <a href="https://github.com/NisargDelvadiya" target="_blank" rel="noopener noreferrer">
-                    <button className="bt">
+                  <a href="https://github.com/NisargDelvadiya" title="Go to https://github.com/NisargDelvadiya" target="_blank" rel="noopener noreferrer">
+                    <button className="bt cursor-pointer">
                       <div className="light-holder">
                         <div className="dot"></div>
                         <div className="light"></div>
@@ -942,8 +942,8 @@ export default function Home() {
                 </div>
                 {/* From Uiverse.io by Gaurang7717 */}
                 <div className="light-button linkedin scale-105 sm:scale-100">
-                  <a href="https://www.linkedin.com/in/nisargjayeshdelvadiya/" target="_blank" rel="noopener noreferrer">
-                    <button className="bt">
+                  <a href="https://www.linkedin.com/in/nisargjayeshdelvadiya/" title="Go to https://www.linkedin.com/in/nisargjayeshdelvadiya/" target="_blank" rel="noopener noreferrer">
+                    <button className="bt cursor-pointer">
                       <div className="light-holder">
                         <div className="dot"></div>
                         <div className="light"></div>
@@ -959,7 +959,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-12 text-center">
-                <a href="mailto:nisarg.delvadiya1@zohomail.in" className="text-zinc-400 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide">
+                <a href="mailto:nisarg.delvadiya1@zohomail.in" title="Go to mailto:nisarg.delvadiya1@zohomail.in" className="text-zinc-400 hover:text-white transition-colors duration-300 text-lg font-medium tracking-wide cursor-pointer">
                   nisarg.delvadiya1@zohomail.in
                 </a>
               </div>

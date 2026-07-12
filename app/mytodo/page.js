@@ -68,7 +68,7 @@ const MyTodo = () => {
       {/* Project Action Buttons */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-10 mb-16 flex-wrap">
         <a
-          href="https://github.com/NisargDelvadiya/MyTodo"
+          href="https://github.com/NisargDelvadiya/MyTodo" title="Go to https://github.com/NisargDelvadiya/MyTodo"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2.5 px-6 py-3 font-semibold text-base bg-[#24292f] text-white border border-zinc-700/50 rounded-xl shadow-lg shadow-black/20 hover:bg-[#2c3137] hover:border-zinc-600 hover:shadow-black/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 select-none cursor-pointer"
@@ -79,7 +79,7 @@ const MyTodo = () => {
           Source Code
         </a>
         <a
-          href="https://www.mytodo.co.in"
+          href="https://www.mytodo.co.in" title="Go to https://www.mytodo.co.in"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2.5 px-6 py-3 font-semibold text-base bg-white/5 text-gray-200 border border-white/10 rounded-xl shadow-lg hover:bg-white/10 hover:text-white hover:border-white/20 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 select-none cursor-pointer"
@@ -202,7 +202,7 @@ const MyTodo = () => {
         <div ref={taskRef} className="w-full max-w-4xl bg-[#13151a]/40 border border-zinc-800/80 rounded-2xl p-8 shadow-2xl backdrop-blur-md">
           <h3 className="text-2xl font-bold text-white mb-4 lexend-font">Building a Secure, High-Performance MERN Stack App</h3>
           <p className="text-zinc-400 text-lg leading-relaxed font-normal">
-            The goal was to design and implement a full-stack MERN (MongoDB, Express, React, Node.js) application featuring strict user authentication, state-driven reactivity, profile configuration, and instant CRUD capabilities. Key deliverables included: password hashing, protected API endpoints using JSON Web Tokens (JWT), seamless task management logic, responsive styling, and a satisfying celebration system for task completions.
+            The goal was to design and implement a highly secure full-stack Next.js application featuring strict user authentication, End-to-End Encryption (E2EE), state-driven reactivity, and instant CRUD capabilities. Key deliverables included: client-side AES encryption, password hashing, protected API endpoints using JSON Web Tokens (JWT), responsive styling, and a satisfying celebration system for task completions.
           </p>
         </div>
       </section>
@@ -221,13 +221,13 @@ const MyTodo = () => {
             <div className="space-y-3">
               <h4 className="font-semibold text-white text-lg">Frontend Implementation</h4>
               <p>
-                Crafted a single-page application using React, Vite, and custom Tailwind CSS. Managed persistent login state securely by handling JWT tokens in localStorage to sustain user sessions. Implemented reactive state modifications for real-time task CRUD updates, and integrated a visually engaging reward mechanism using canvas-confetti upon task list completion.
+                Crafted a secure application using Next.js (App Router) and custom Tailwind CSS. Implemented military-grade End-to-End Encryption (E2EE) using AES crypto-js where tasks are encrypted locally in the browser. Managed persistent login state securely by handling JWT tokens to sustain user sessions. Integrated a visually engaging reward mechanism using canvas-confetti upon task list completion.
               </p>
             </div>
             <div className="space-y-3">
               <h4 className="font-semibold text-white text-lg">Backend Engineering</h4>
               <p>
-                Built a RESTful API using Node.js and Express. Modeled cloud collections using Mongoose schemas for users and tasks. Integrated salt-based Bcrypt hashing for password protection and developed verification/login token validation middleware. Created a cascade account deletion API that purges all associated todo items upon user deletion.
+                Built high-performance Next.js Serverless API Routes. Modeled cloud collections using Mongoose schemas. Integrated salt-based Bcrypt hashing for password protection and developed verification token validation. Because of the E2EE architecture, the backend never sees plain text tasks—only ciphertext. Created a cascade account deletion API that purges all associated encrypted todo items.
               </p>
             </div>
           </div>

@@ -84,10 +84,10 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-heading uppercase">Legal</h2>
               <ul className="text-body font-medium">
                 <li className="mb-4">
-                  <a href="/t&c" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">Terms &amp; Conditions</a>
+                  <a href="/t&c" title="Go to /t&c" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Terms &amp; Conditions</a>
                 </li>
                 <li>
-                  <a href="/privacy" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">Privacy Policy</a>
+                  <a href="/privacy" title="Go to /privacy" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Privacy Policy</a>
                 </li>
               </ul>
             </div>
@@ -95,10 +95,10 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-heading uppercase" title="dātavyam iti yad dānaṁ dīyate 'nupakāriṇe deśhe kāle cha pātre cha tad dānaṁ sāttvikaṁ smṛitam — Charity given to a worthy person simply because it is right to give, without consideration of anything in return, at the proper time and in the proper place, is stated to be in the mode of goodness. (Bhagavad Gita, Chapter 17, Verse 20)">Donation</h2>
               <ul className="text-body font-medium">
                 <li className="mb-4">
-                  <a href="https://www.akshayapatra.org" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">Akshaya Patra Foundation</a>
+                  <a href="https://www.akshayapatra.org" title="Go to https://www.akshayapatra.org" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Akshaya Patra Foundation</a>
                 </li>
                 <li>
-                  <a href="https://hindu.fund" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">Hindu Fund</a>
+                  <a href="https://hindu.fund" title="Go to https://hindu.fund" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Hindu Fund</a>
                 </li>
               </ul>
             </div>
@@ -106,7 +106,7 @@ const Footer = () => {
         <hr className="my-6 border-default sm:mx-auto lg:my-8" />
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 flex-wrap pb-4">
           <div className="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto text-center sm:text-left">
-            <span className="text-sm text-body text-[#555]">&copy; 2026 <a href="https://www.nisargjayeshdelvadiya.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">NisargJayeshDelvadiya &trade;</a> • Made with ❤️ in Bharat 🇮🇳 | All Rights are Reserved
+            <span className="text-sm text-body text-[#555]">&copy; 2026 <a href="https://www.nisargjayeshdelvadiya.com" title="Go to https://www.nisargjayeshdelvadiya.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">NisargJayeshDelvadiya &trade;</a> • Made with ❤️ in Bharat 🇮🇳 | All Rights are Reserved
             </span>
           </div>
 

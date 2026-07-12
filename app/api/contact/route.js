@@ -51,7 +51,7 @@ ${message}
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e1e4e8; border-radius: 8px;">
           <h2 style="color: #24292e; border-bottom: 1px solid #e1e4e8; padding-bottom: 10px;">New Contact Form Submission</h2>
-          <p><strong>From:</strong> <a href="mailto:${email}">${email}</a></p>
+          <p><strong>From:</strong> <a href="mailto:${email}" title="Go to mailto:${email}">${email}</a></p>
           <p><strong>Subject:</strong> ${subject}</p>
           <p><strong>Message:</strong></p>
           <div style="background-color: #f6f8fa; padding: 15px; border-radius: 6px; border: 1px solid #d1d5da; white-space: pre-wrap; font-family: monospace;">${message}</div>

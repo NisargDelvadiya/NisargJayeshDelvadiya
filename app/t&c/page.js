@@ -19,7 +19,7 @@ export default function TermsAndConditionsPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-white">1. Acceptance of Terms</h2>
           <p className="leading-relaxed">
-            These Terms &amp; Conditions govern your use of the website <strong>NisargJayeshDelvadiya</strong> (accessible via <a href="https://www.nisargjayeshdelvadiya.com" className="text-blue-400 hover:underline">www.nisargjayeshdelvadiya.com</a>). By accessing or using this website, you agree to be bound by these terms, which constitute a legally binding agreement between you and Nisarg Jayesh Delvadiya. 
+            These Terms &amp; Conditions govern your use of the website <strong>NisargJayeshDelvadiya</strong> (accessible via <a href="https://www.nisargjayeshdelvadiya.com" title="Go to https://www.nisargjayeshdelvadiya.com" className="text-blue-400 hover:underline cursor-pointer">www.nisargjayeshdelvadiya.com</a>). By accessing or using this website, you agree to be bound by these terms, which constitute a legally binding agreement between you and Nisarg Jayesh Delvadiya. 
           </p>
           <p className="leading-relaxed">
             These terms are published in accordance with the provisions of <strong>Rule 3 (1) of the Information Technology (Intermediaries Guidelines and Digital Media Ethics Code) Rules, 2021</strong>, requiring the publishing of rules, regulations, privacy policy, and terms of use for access or usage of this website.
@@ -89,7 +89,7 @@ export default function TermsAndConditionsPage() {
           </p>
           <div className="space-y-1 text-sm">
             <p><strong className="text-white">Name:</strong> Nisarg Jayesh Delvadiya</p>
-            <p><strong className="text-white">Email:</strong> <a href="mailto:nisarg.delvadiya1@zohomail.in" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">nisarg.delvadiya1@zohomail.in</a></p>
+            <p><strong className="text-white">Email:</strong> <a href="mailto:nisarg.delvadiya1@zohomail.in" title="Go to mailto:nisarg.delvadiya1@zohomail.in" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">nisarg.delvadiya1@zohomail.in</a></p>
             <p><strong className="text-white">Location:</strong> Vadodara, Gujarat, Bharat</p>
           </div>
         </section>
@@ -101,8 +101,8 @@ export default function TermsAndConditionsPage() {
             <p className="mb-4">In accordance with the Information Technology Act, the contact details of the Grievance Officer are provided below:</p>
             <p><strong className="text-white">Name:</strong> Nisarg Jayesh Delvadiya</p>
             <p><strong className="text-white">Designation:</strong> Grievance Redressal Officer</p>
-            <p><strong className="text-white">Email:</strong> <a href="mailto:care@naksh.com" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">care@naksh.com</a></p>
-            <p><strong className="text-white">Phone:</strong> <a href="tel:+917984406844" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">+91 7984406844</a></p>
+            <p><strong className="text-white">Email:</strong> <a href="mailto:care@naksh.com" title="Go to mailto:care@naksh.com" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">care@naksh.com</a></p>
+            <p><strong className="text-white">Phone:</strong> <a href="tel:+917984406844" title="Go to tel:+917984406844" className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">+91 7984406844</a></p>
             <p><strong className="text-white">Working Hours:</strong> Mon-Fri, 9 AM - 5 PM (IST)</p>
           </div>
         </section>

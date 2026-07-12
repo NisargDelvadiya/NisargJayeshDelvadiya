@@ -417,23 +417,7 @@ export default function Home() {
           );
         }
 
-        /* Arratai Hover Styles */
-        .light-button.arratai button.bt:hover .button-holder svg {
-          fill: rgba(255, 214, 0, 1);
-        }
-        .light-button.arratai button.bt:hover .button-holder {
-          color: rgba(255, 214, 0, 1);
-          outline: rgba(255, 214, 0, 0.4) 2px solid;
-          outline-offset: 2px;
-          border-color: rgba(255, 214, 0, 0.5);
-        }
-        .light-button.arratai button.bt:hover .light-holder .light {
-          background: linear-gradient(
-            180deg,
-            rgba(255, 214, 0, 0.4) 0%,
-            rgba(255, 214, 0, 0) 75%
-          );
-        }
+        
 
 
         /* Circular Glass Cards styling for Projects Section */
@@ -906,23 +890,6 @@ export default function Home() {
             <div className="mt-16 text-center">
               <p className="text-zinc-500 text-xs font-semibold uppercase tracking-widest mb-8">Or reach out directly via</p>
               <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center sm:items-end gap-8 sm:gap-16 min-h-[160px]">
-                {/* From Uiverse.io by Gaurang7717 */}
-                <div className="light-button arratai scale-105 sm:scale-100">
-                  <a href="https://aratt.ai/user/@nisargjayeshdelvadiya" title="Go to https://aratt.ai/user/@nisargjayeshdelvadiya" target="_blank" rel="noopener noreferrer">
-                    <button className="bt cursor-pointer">
-                      <div className="light-holder">
-                        <div className="dot"></div>
-                        <div className="light"></div>
-                      </div>
-                      <div className="button-holder">
-                        <svg viewBox="0 0 48 48">
-                          <path fillRule="evenodd" clipRule="evenodd" d="M42,37c0,2.76-2.24,5-5,5H11c-2.76,0-5-2.24-5-5V11c0-2.76,2.24-5,5-5h26c2.76,0,5,2.24,5,5V37z M35,33.957c-0.553,0-1-0.448-1-1v-18c0-0.552,0.447-1,1-1s1,0.448,1,1v18 C36,33.509,35.553,33.957,35,33.957z M30,33.957c-0.138,0-0.276-0.028-0.406-0.086l-4.306-1.914H14c-1.103,0-2-0.897-2-2v-7 c0-0.552,0.447-1,1-1h10c0.553,0,1,0.448,1,1s-0.447,1-1,1h-9v6h11.5c0.14,0,0.278,0.029,0.406,0.086L29,31.418V15.957H18v3 c0,0.552-0.447,1-1,1s-1-0.448-1-1v-3c0-1.103,0.897-2,2-2h11c1.103,0,2,0.897,2,2v17c0,0.338-0.171,0.654-0.455,0.838 C30.38,33.902,30.19,33.957,30,33.957z" />
-                        </svg>
-                        <p>Arratai</p>
-                      </div>
-                    </button>
-                  </a>
-                </div>
                 {/* From Uiverse.io by Gaurang7717 */}
                 <div className="light-button github scale-105 sm:scale-100">
                   <a href="https://github.com/NisargDelvadiya" title="Go to https://github.com/NisargDelvadiya" target="_blank" rel="noopener noreferrer">

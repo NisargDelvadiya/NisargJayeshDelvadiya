@@ -75,7 +75,6 @@ While building this portfolio, I overcame several interesting technical hurdles:
 
 I am currently open for opportunities! If you like what you see, let's get in touch:
 - **Email**: [nisarg.delvadiya1@gmail.com](mailto:nisarg.delvadiya1@gmail.com)
-- **Arratai**: [@nisargjayeshdelvadiya](https://aratt.ai/user/@nisargjayeshdelvadiya)
 - **GitHub**: [@NisargDelvadiya](https://github.com/NisargDelvadiya)
 - **LinkedIn**: [Nisarg Jayesh Delvadiya](https://www.linkedin.com/in/nisarg-delvadiya/)
 

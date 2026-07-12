@@ -21,7 +21,6 @@ const ALL_LANGUAGES = [
   { code: "pa", name: "Punjabi" },
   { code: "sa", name: "Sanskrit" },
   { code: "sat", name: "Santali" },
-  { code: "sd", name: "Sindhi" },
   { code: "ta", name: "Tamil" },
   { code: "te", name: "Telugu" }
 ]

@@ -100,6 +100,12 @@ const Footer = () => {
                 <li>
                   <a href="https://hindu.fund" title="Go to https://hindu.fund" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Hindu Fund</a>
                 </li>
+    <li>
+                  <a href="https://www.veducation.world" title="Go to https://hindu.fund" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Veducation</a>
+                </li>
+    <li>
+                  <a href="https://forthepeople.in/en" title="Go to https://hindu.fund" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">forthepoeple</a>
+                </li>
               </ul>
             </div>
         </div>

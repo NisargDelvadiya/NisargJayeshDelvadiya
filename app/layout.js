@@ -2,6 +2,14 @@ import "./globals.css";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import BackgroundElements from "@/app/components/BackgroundElements";
+import PwaRegister from "@/app/components/PwaRegister";
+
+export const viewport = {
+  themeColor: "#010409",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata = {
   metadataBase: new URL('https://www.nisargjayeshdelvadiya.com'),
@@ -35,6 +43,8 @@ export const metadata = {
     },
   },
   appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
     title: "NisargJayeshDelvadiya",
   },
   manifest: "/Assets/favicon/site.webmanifest?v=20260625",
@@ -52,6 +62,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="text-white bg-[#010409]">
+        <PwaRegister />
         <BackgroundElements />
 
         <Navbar />

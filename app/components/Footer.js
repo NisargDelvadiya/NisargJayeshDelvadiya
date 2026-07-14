@@ -94,7 +94,7 @@ const Footer = () => {
             <div>
               <h2 className="mb-6 text-sm xl:text-base 2xl:text-lg font-semibold text-heading uppercase transition-all duration-300" title="dātavyam iti yad dānaṁ dīyate 'nupakāriṇe deśhe kāle cha pātre cha tad dānaṁ sāttvikaṁ smṛitam — Charity given to a worthy person simply because it is right to give, without consideration of anything in return, at the proper time and in the proper place, is stated to be in the mode of goodness. (Bhagavad Gita, Chapter 17, Verse 20)">Donation</h2>
               <ul className="text-body font-medium xl:text-lg 2xl:text-xl transition-all duration-300">
-                <li className="mb-4">
+                <li>
                   <a href="https://www.akshayapatra.org" title="Go to https://www.akshayapatra.org" target="_blank" rel="noopener noreferrer" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Akshaya Patra Foundation</a>
                 </li>
                 <li>

@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <nav aria-label="Main Navigation" className="text-white flex items-center justify-between px-8 lg:px-12 xl:px-24 2xl:px-32 h-20 xl:h-24 2xl:h-28 sticky top-0 z-50 bg-[#1a1a1a] transition-all duration-300">
 
-      <a aria-label="Home Page" href="https://www.nisargjayeshdelvadiya.com" title="Go to https://www.nisargjayeshdelvadiya.com" className="logo flex relative items-center focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer transition-all duration-300 xl:scale-110 2xl:scale-125 xl:origin-left">
+      <a aria-label="Home Page" href="https://www.nisargjayeshdelvadiya.com" title="Go to https://www.nisargjayeshdelvadiya.com" className="logo flex relative items-center outline-none focus:outline-none rounded cursor-pointer transition-all duration-300 xl:scale-110 2xl:scale-125 xl:origin-left">
         <div className="logo2">
           <img src="/Assets/Logo2.png" alt="logo" width="40" />
         </div>

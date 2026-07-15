@@ -42,7 +42,6 @@ const PROJECT_ITEMS = [
  * and a contact form with error/success handling.
  */
 export default function Home() {
-  const contactRef = useRef(null);
   const router = useRouter();
   const profileImageRef = useRef(null);
   const profileTextRef = useRef(null);

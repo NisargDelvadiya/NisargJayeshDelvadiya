@@ -17,7 +17,20 @@ export default function NotFound() {
         </FuzzyText>
       </div>
       <h2 className="text-3xl font-bold mt-2">Page Not Found</h2>
-      <p className="text-zinc-400 mt-4 mb-8 text-lg">Oops! The page you're looking for doesn't exist.</p>
+      <p className="text-zinc-400 mt-4 text-lg">Oops! The page you're looking for doesn't exist.</p>
+      
+      <div className="max-w-md mx-auto my-6 text-left bg-white/5 border border-white/10 rounded-xl p-5">
+        <h3 className="text-zinc-200 font-semibold mb-2">Why did this happen?</h3>
+        <p className="text-zinc-400 text-sm mb-4">
+          The URL you visited might have a typo, or the page may have been moved or deleted.
+        </p>
+        <h3 className="text-zinc-200 font-semibold mb-2">How to solve this:</h3>
+        <ul className="text-zinc-400 text-sm list-disc list-inside space-y-1">
+          <li>Check the web address for any typos.</li>
+          <li>Click the button below to return to the homepage.</li>
+          <li>Use the main navigation menu to find what you need.</li>
+        </ul>
+      </div>
       
       <Link 
         href="/" 

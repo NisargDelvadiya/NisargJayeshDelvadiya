@@ -16,10 +16,10 @@ export default function NotFound() {
           404
         </FuzzyText>
       </div>
-      <h2 className="text-3xl font-bold mt-2">Page Not Found</h2>
-      <p className="text-zinc-400 mt-4 text-lg">Oops! The page you're looking for doesn't exist.</p>
+      <h2 className="text-2xl md:text-3xl font-bold mt-2">Page Not Found</h2>
+      <p className="text-zinc-400 mt-3 md:mt-4 text-base md:text-lg max-w-[90vw]">Oops! The page you're looking for doesn't exist.</p>
       
-      <div className="max-w-md mx-auto my-6 text-left bg-white/5 border border-white/10 rounded-xl p-5">
+      <div className="w-full max-w-md mx-auto my-6 text-left bg-white/5 border border-white/10 rounded-xl p-4 md:p-5">
         <h3 className="text-zinc-200 font-semibold mb-2">Why did this happen?</h3>
         <p className="text-zinc-400 text-sm mb-4">
           The URL you visited might have a typo, or the page may have been moved or deleted.

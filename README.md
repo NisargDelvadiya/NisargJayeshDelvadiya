@@ -1,5 +1,6 @@
 # Nisarg Jayesh Delvadiya | Developer Portfolio 🚀
 
+*Updated: 15 July 2026*
 <div align="center">
   <a href="https://github.com/NisargDelvadiya/NisargJayeshDelvadiya/stargazers"><img src="https://img.shields.io/github/stars/NisargDelvadiya/NisargJayeshDelvadiya?style=for-the-badge&logo=github&color=yellow" alt="Stars Badge"/></a>
   <a href="https://github.com/NisargDelvadiya/NisargJayeshDelvadiya/network/members"><img src="https://img.shields.io/github/forks/NisargDelvadiya/NisargJayeshDelvadiya?style=for-the-badge&logo=github&color=blue" alt="Forks Badge"/></a>

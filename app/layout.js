@@ -44,14 +44,14 @@ export const metadata = {
     statusBarStyle: "black-translucent",
     title: "NisargJayeshDelvadiya",
   },
-  manifest: "/Assets/favicon/site.webmanifest?v=20260625",
+  manifest: "/assets/favicon/site.webmanifest?v=20260625",
   icons: {
     icon: [
-      { url: "/Assets/favicon/favicon-96x96.png?v=20260625", sizes: "96x96", type: "image/png" },
-      { url: "/Assets/favicon/favicon.svg?v=20260625", type: "image/svg+xml" },
+      { url: "/assets/favicon/favicon-96x96.png?v=20260625", sizes: "96x96", type: "image/png" },
+      { url: "/assets/favicon/favicon.svg?v=20260625", type: "image/svg+xml" },
     ],
-    shortcut: "/Assets/favicon/favicon.ico?v=20260625",
-    apple: { url: "/Assets/favicon/apple-touch-icon.png?v=20260625", sizes: "180x180" },
+    shortcut: "/assets/favicon/favicon.ico?v=20260625",
+    apple: { url: "/assets/favicon/apple-touch-icon.png?v=20260625", sizes: "180x180" },
   },
 };
 

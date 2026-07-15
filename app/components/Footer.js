@@ -84,7 +84,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm xl:text-base 2xl:text-lg font-semibold text-heading uppercase transition-all duration-300">Legal</h2>
               <ul className="text-body font-medium xl:text-lg 2xl:text-xl transition-all duration-300">
                 <li className="mb-4">
-                  <a href="/t&c" title="Go to /t&c" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Terms &amp; Conditions</a>
+                  <a href="/terms" title="Go to /terms" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Terms &amp; Conditions</a>
                 </li>
                 <li>
                   <a href="/privacy" title="Go to /privacy" className="hover:underline text-[#555] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded cursor-pointer">Privacy Policy</a>

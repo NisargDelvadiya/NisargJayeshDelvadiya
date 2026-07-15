@@ -22,7 +22,7 @@ if (typeof window !== "undefined") {
 }
 
 const PROJECT_ITEMS = [
-  { image: '/Assets/mytodo.png', link: '/mytodo' },
+  { image: '/assets/mytodo.png', link: '/my-todo' },
   { image: 'https://picsum.photos/seed/1/800/600?grayscale' },
   { image: 'https://picsum.photos/seed/2/800/600?grayscale' },
   { image: 'https://picsum.photos/seed/3/800/600?grayscale' },
@@ -513,7 +513,7 @@ export default function Home() {
               <img
                 className="object-cover rounded-full border border-zinc-800 shadow-xl w-56 h-56 md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[450px] xl:h-[450px] 2xl:w-[550px] 2xl:h-[550px] transition-all duration-300"
                 alt="hero"
-                src="/Assets/hero.jpg"
+                src="/assets/hero.jpg"
                 width="300"
                 height="300"
                 loading="lazy"
@@ -528,11 +528,11 @@ export default function Home() {
               </div>
               {/* 
                 INSTRUCTIONS: 
-                To make this work, place your resume PDF file inside the "public/Assets/" folder
+                To make this work, place your resume PDF file inside the "public/assets/" folder
                 and name it exactly "Nisarg_Jayesh_Delvadiya_Resume.pdf". 
               */}
               <a
-                href="/Assets/Nisarg_Jayesh_Delvadiya_Resume.pdf" title="Go to /Assets/Nisarg_Jayesh_Delvadiya_Resume.pdf"
+                href="/assets/Nisarg_Jayesh_Delvadiya_Resume.pdf" title="Go to /assets/Nisarg_Jayesh_Delvadiya_Resume.pdf"
                 download="Nisarg_Jayesh_Delvadiya_Resume.pdf"
                 className="cursor-pointer inline-block rounded-xl bg-blue-600 px-8 py-3 text-sm lg:text-base xl:text-lg font-semibold text-center leading-6 text-white transition-colors duration-200 hover:bg-blue-700 focus-visible:bg-blue-700 mt-4 xl:mt-8 2xl:px-12 2xl:py-4"
               >
@@ -564,7 +564,7 @@ export default function Home() {
               <img
                 className="object-cover rounded-full border border-zinc-800 shadow-xl w-56 h-56 md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[450px] xl:h-[450px] 2xl:w-[550px] 2xl:h-[550px] transition-all duration-300"
                 alt="hero"
-                src="/Assets/MUJ.jpg"
+                src="/assets/MUJ.jpg"
                 width="300"
                 height="300"
                 loading="lazy"

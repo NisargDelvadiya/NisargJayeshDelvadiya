@@ -48,10 +48,10 @@ const Navbar = () => {
 
       <a aria-label="Home Page" href="https://www.nisargjayeshdelvadiya.com" title="Go to https://www.nisargjayeshdelvadiya.com" className="logo flex relative items-center outline-none focus:outline-none rounded cursor-pointer transition-all duration-300 xl:scale-110 2xl:scale-125 xl:origin-left">
         <div className="logo2">
-          <img src="/Assets/Logo2.png" alt="logo" width="40" />
+          <img src="/assets/Logo2.png" alt="logo" width="40" />
         </div>
         <div className="logo1 mt-2">
-          <img src="/Assets/Logo1.png" alt="logo" width="140" />
+          <img src="/assets/Logo1.png" alt="logo" width="140" />
         </div>
       </a>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
           className="text-white hover:text-zinc-300 transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded p-2"
         >
           <img 
-            src={isMobileMenuOpen ? "/Assets/close.svg" : "/Assets/menu.svg"} 
+            src={isMobileMenuOpen ? "/assets/close.svg" : "/assets/menu.svg"} 
             alt={isMobileMenuOpen ? "Close menu" : "Open menu"} 
             className="w-8 h-8" 
           />

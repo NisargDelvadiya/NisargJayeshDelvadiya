@@ -9,7 +9,7 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: 'https://www.nisargjayeshdelvadiya.com/mytodo',
+      url: 'https://www.nisargjayeshdelvadiya.com/my-todo',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -21,7 +21,7 @@ export default function sitemap() {
       priority: 0.5,
     },
     {
-      url: 'https://www.nisargjayeshdelvadiya.com/t&c',
+      url: 'https://www.nisargjayeshdelvadiya.com/terms',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,

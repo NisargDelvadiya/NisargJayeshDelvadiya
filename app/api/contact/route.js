@@ -1,8 +1,41 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+// Simple in-memory rate limiter to prevent spam bots
+const rateLimitMap = new Map();
+const RATE_LIMIT_WINDOW_MS = 60 * 1000; // 1 minute window
+const MAX_REQUESTS_PER_WINDOW = 3; // Maximum 3 emails per minute per IP
+
 export async function POST(request) {
   try {
+    // 1. IP-Based Rate Limiting
+    const ip = request.headers.get('x-forwarded-for') || 'unknown_ip';
+    const currentTime = Date.now();
+    
+    if (rateLimitMap.has(ip)) {
+      const rateData = rateLimitMap.get(ip);
+      if (currentTime - rateData.startTime < RATE_LIMIT_WINDOW_MS) {
+        if (rateData.count >= MAX_REQUESTS_PER_WINDOW) {
+          return NextResponse.json(
+            { error: 'Too many requests. Please wait a minute before sending another message.' },
+            { status: 429 } // 429 Too Many Requests
+          );
+        }
+        rateData.count += 1;
+      } else {
+        // Reset window for this IP
+        rateLimitMap.set(ip, { count: 1, startTime: currentTime });
+      }
+    } else {
+      rateLimitMap.set(ip, { count: 1, startTime: currentTime });
+    }
+
+    // Basic garbage collection to prevent memory leaks if thousands of unique IPs hit the server
+    if (rateLimitMap.size > 1000) {
+      rateLimitMap.clear();
+    }
+
+    // 2. Process Email Submission
     const { email, subject, message } = await request.json();
 
     if (!email || !subject || !message) {

@@ -3,6 +3,7 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import BackgroundElements from "@/app/components/BackgroundElements";
 import PwaRegister from "@/app/components/PwaRegister";
+import CookieConsent from "@/app/components/CookieConsent";
 
 export const viewport = {
   themeColor: "#010409",
@@ -72,6 +73,7 @@ export default function RootLayout({ children }) {
         </main>
 
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

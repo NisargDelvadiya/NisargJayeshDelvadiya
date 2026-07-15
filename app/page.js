@@ -2,22 +2,49 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+
+const CircularGallery = dynamic(() => import('@/app/components/CircularGallery'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full min-h-[160px] flex flex-col justify-center items-center gap-3 bg-zinc-900/30 rounded-xl border border-zinc-800/50 backdrop-blur-sm animate-pulse">
+      <div className="w-6 h-6 border-2 border-zinc-700 border-t-zinc-400 rounded-full animate-spin"></div>
+      <p className="text-zinc-500 text-xs tracking-widest uppercase developer-font">Loading 3D Gallery...</p>
+    </div>
+  )
+});
+import SplitText from '@/app/components/SplitText';
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-
-
+const PROJECT_ITEMS = [
+  { image: '/Assets/mytodo.png', link: '/mytodo' },
+  { image: 'https://picsum.photos/seed/1/800/600?grayscale' },
+  { image: 'https://picsum.photos/seed/2/800/600?grayscale' },
+  { image: 'https://picsum.photos/seed/3/800/600?grayscale' },
+  { image: 'https://picsum.photos/seed/4/800/600?grayscale' },
+  { image: 'https://picsum.photos/seed/5/800/600?grayscale' }
+];
 
 /**
  * Main Landing Page Component
  * Represents the entire portfolio layout, handling animations, 
  * contact form submissions, and smooth scrolling for navigation.
  */
+/**
+ * Home Component
+ * The main landing page of the portfolio website.
+ * It integrates a 3D circular gallery, dynamic SplitText animations,
+ * and a contact form with error/success handling.
+ */
 export default function Home() {
   // Reference hooks
+  const contactRef = useRef(null);
+  const router = useRouter();
   const profileImageRef = useRef(null);
   const profileTextRef = useRef(null);
   const educationImageRef = useRef(null);
@@ -420,138 +447,29 @@ export default function Home() {
         
 
 
-        /* Circular Glass Cards styling for Projects Section */
-        .projects-container {
-          position: relative;
-          width: 600px;
-          height: 600px;
-          margin: 4rem auto;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: visible;
-        }
-
-        .projects-container .glass {
-          position: absolute;
-          width: 150px;
-          height: 200px;
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s ease, border-color 0.6s ease;
-          border-radius: 12px;
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          cursor: pointer;
-          z-index: 1;
-          left: 50%;
-          top: 50%;
-          /* 
-            Radial rotation: translate to center, rotate around it, translate outward along Y
-          */
-          transform: translate(-50%, -50%) rotate(calc(var(--r) * 1deg)) translateY(-255px);
-        }
-
-        /* Hover: pull radially outward from the center */
-        .projects-container .glass:hover {
-          transform: translate(-50%, -50%) rotate(calc(var(--r) * 1deg)) translateY(-315px);
-          z-index: 100; /* Raise z-index higher than normal state cards to overlay them correctly */
-          border-color: rgba(255, 255, 255, 0.35);
-          box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.15);
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
-        }
-
-        .projects-container .glass::before {
-          content: attr(data-text);
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 35px;
-          background: rgba(255, 255, 255, 0.03);
-          border-top: 1px solid rgba(255, 255, 255, 0.05);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: rgba(255, 255, 255, 0.7);
-          font-family: "JetBrains Mono", monospace;
-          font-size: 0.68rem;
-          border-bottom-left-radius: 11px;
-          border-bottom-right-radius: 11px;
-          letter-spacing: 0.02em;
-          padding: 0 6px;
-          box-sizing: border-box;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-
-        .projects-container .glass img {
-          width: 80%;
-          height: auto;
-          max-height: 110px;
-          object-fit: contain;
-          border-radius: 6px;
-          transition: transform 0.5s ease;
-          pointer-events: none;
-        }
-
-        .projects-container .glass:hover img {
-          transform: scale(1.05);
-        }
-
-        /* Prevent card hover jitter by extending hit area on hover */
-        .projects-container .glass:hover::after {
-          content: '';
-          position: absolute;
-          bottom: -70px;
-          left: 0;
-          width: 100%;
-          height: 70px;
-          background: transparent;
-          pointer-events: auto;
-        }
-
-        @media (max-width: 640px) {
-          .projects-container {
-            width: 100%;
-            height: auto;
-            margin: 2rem auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            padding: 0 1rem;
-          }
-          .projects-container .glass {
-            position: relative;
-            left: auto;
-            top: auto;
-            width: 100%;
-            max-width: 300px;
-            height: 200px;
-            margin: 0 auto;
-            transform: none !important;
-            border-radius: 16px;
-          }
-          .projects-container .glass:hover {
-            transform: translateY(-8px) !important;
-            z-index: 10;
-          }
-          .projects-container .glass::before {
-            font-size: 0.8rem;
-            height: 35px;
-          }
         }
       `}</style>
 
-      <div className="flex justify-center items-center gap-2 font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-16 md:mb-8 mt-1 md:mt-1 text-center px-4 developer-font transition-all duration-300">Namaste /\
-      </div>
-      <div className="flex justify-center items-center gap-2 font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-16 md:mb-8 md:mt-1 text-center px-4 developer-font transition-all duration-300">Welcome to my Portfolio Website :)
-      </div>
+      <SplitText
+        text="Namaste /\"
+        className="block font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-16 md:mb-8 mt-1 md:mt-1 text-center px-4 developer-font transition-all duration-300"
+        delay={50}
+        duration={1.25}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+      />
+      <SplitText
+        text="Welcome to my Portfolio Website :)"
+        className="block font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-16 md:mb-8 md:mt-1 text-center px-4 developer-font transition-all duration-300"
+        delay={50}
+        duration={1.25}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+      />
 
       <div className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl bg-[#1e1e1e] rounded-lg border border-zinc-800 shadow-2xl p-4 sm:p-6 lg:p-8 xl:p-10 developer-font relative mb-32 md:mb-64 overflow-hidden transition-all duration-300">
         <div className="flex gap-1.5 absolute top-3 left-4">
@@ -600,6 +518,7 @@ export default function Home() {
                 src="/Assets/hero.jpg"
                 width="300"
                 height="300"
+                loading="lazy"
               />
             </div>
             <div ref={profileTextRef} className="flex flex-col justify-center items-center text-center md:text-left md:items-start grow w-full max-w-2xl xl:max-w-4xl 2xl:max-w-5xl gap-y-6 min-w-0 transition-all duration-300">
@@ -649,7 +568,9 @@ export default function Home() {
                 alt="hero"
                 src="/Assets/MUJ.jpg"
                 width="300"
-                height="300" />
+                height="300"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
@@ -661,32 +582,19 @@ export default function Home() {
           </span>
           <span className="h-px flex-1 bg-zinc-800"></span>
         </div>
-        {/* From Uiverse.io by codebykay101 */}
-        <section className="relative w-full flex justify-center items-center overflow-visible py-16">
-          <div className="projects-container">
-            <Link href="/mytodo" style={{ display: 'contents' }}>
-              <div data-text="MyTodo" style={{ '--r': '0' }} className="glass">
-                <img src="/Assets/mytodo.png" alt="Todo Project" />
-              </div>
-            </Link>
-            <div data-text="" style={{ '--r': '51.4' }} className="glass">
-              <img src="null" alt="" />
-            </div>
-            <div data-text="" style={{ '--r': '102.9' }} className="glass">
-              <img src="null" alt="" />
-            </div>
-            <div data-text="" style={{ '--r': '154.3' }} className="glass">
-              <img src="null" alt="" />
-            </div>
-            <div data-text="" style={{ '--r': '205.7' }} className="glass">
-              <img src="null" alt="" />
-            </div>
-            <div data-text="" style={{ '--r': '257.1' }} className="glass">
-              <img src="null" alt="" />
-            </div>
-            <div data-text="" style={{ '--r': '308.6' }} className="glass">
-              <img src="null" alt="" />
-            </div>
+        <section className="relative w-full flex justify-center items-center overflow-visible my-8">
+          <div style={{ height: '160px', position: 'relative', width: '100%', maxWidth: '1200px', margin: '0 auto' }}>
+            <CircularGallery
+              bend={3}
+              textColor="#ffffff"
+              borderRadius={0.05}
+              scrollEase={0.02}
+              fontUrl=""
+              font="bold 30px Orbitron"
+              scrollSpeed={2}
+              items={PROJECT_ITEMS}
+              onItemClick={(link) => router.push(link)}
+            />
           </div>
         </section>
 
@@ -802,6 +710,7 @@ export default function Home() {
                 <div className="flex flex-col items-center gap-4">
                   <button
                     type="submit"
+                    title="Send Message"
                     disabled={submitStatus === 'loading'}
                     className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 sm:w-fit cursor-pointer"
                   >

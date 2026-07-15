@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import lhciData from '../data/lighthouse.json';
+import SplitText from '@/app/components/SplitText';
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -47,9 +48,16 @@ const MyTodo = () => {
   }, []);
   return (
     <div className="flex flex-col items-center min-h-screen text-white p-4">
-      <div className="flex justify-center items-center gap-2 font-bold text-5xl mb-6 mt-10 developer-font text-white text-center">
-        MyTodo - Same Masks Same Tasks
-      </div>
+      <SplitText
+        text="MyTodo - Same Masks Same Tasks"
+        className="block font-bold text-5xl mb-6 mt-10 developer-font text-white text-center"
+        delay={50}
+        duration={1.25}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+      />
       <div className="flex justify-center items-center mt-6">
         <video
           className="w-full max-w-[800px] rounded-lg shadow-xl border border-zinc-800"

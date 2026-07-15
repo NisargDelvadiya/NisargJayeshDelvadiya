@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import lhciData from '../data/lighthouse.json';
+import lhciData from '@/app/data/lighthouse.json';
 import SplitText from '@/app/components/SplitText';
 
 if (typeof window !== "undefined") {

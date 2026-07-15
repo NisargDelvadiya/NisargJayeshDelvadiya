@@ -5,7 +5,7 @@ import FuzzyText from './components/FuzzyText';
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4 developer-font">
+    <div className="flex flex-col items-center justify-center min-h-screen text-center px-4 developer-font bg-[#010409]">
       <div className="mb-4">
         <FuzzyText 
           baseIntensity={0.2}

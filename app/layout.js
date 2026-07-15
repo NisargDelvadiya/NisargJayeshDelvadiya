@@ -1,9 +1,5 @@
 import "./globals.css";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
-import BackgroundElements from "@/app/components/BackgroundElements";
 import PwaRegister from "@/app/components/PwaRegister";
-import CookieConsent from "@/app/components/CookieConsent";
 
 export const viewport = {
   themeColor: "#010409",
@@ -64,16 +60,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="text-white bg-[#010409]">
         <PwaRegister />
-        <BackgroundElements />
-
-        <Navbar />
-        
-        <main id="main-content" className="min-h-[80.8vh] relative z-10">
-          {children}
-        </main>
-
-        <Footer />
-        <CookieConsent />
+        {children}
       </body>
     </html>
   );

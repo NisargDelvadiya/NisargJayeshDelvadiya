@@ -625,6 +625,7 @@ export default function CircularGallery({
   fontUrl,
   scrollSpeed = 2,
   scrollEase = 0.05,
+  className = '',
   onItemClick
 }) {
   const containerRef = useRef(null);

@@ -40,9 +40,7 @@ const PROJECT_ITEMS = [
  * The main landing page of the portfolio website.
  * It integrates a 3D circular gallery, dynamic SplitText animations,
  * and a contact form with error/success handling.
- */
 export default function Home() {
-  // Reference hooks
   const contactRef = useRef(null);
   const router = useRouter();
   const profileImageRef = useRef(null);

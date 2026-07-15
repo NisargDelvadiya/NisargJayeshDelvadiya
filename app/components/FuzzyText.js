@@ -90,7 +90,7 @@ const FuzzyText = ({
       const textBoundingWidth = Math.ceil(letterSpacing !== 0 ? totalWidth : actualLeft + actualRight);
       const tightHeight = Math.ceil(actualAscent + actualDescent);
 
-      const extraWidthBuffer = 10;
+      const extraWidthBuffer = 40; // Increased buffer to prevent clipping
       const offscreenWidth = textBoundingWidth + extraWidthBuffer;
 
       offscreen.width = offscreenWidth;
